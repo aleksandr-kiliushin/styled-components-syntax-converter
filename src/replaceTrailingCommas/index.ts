@@ -1,5 +1,5 @@
 const replaceTrailingCommas = ({ aString }: { aString: string }): string => {
-  return aString.replaceAll(/,/g, ";")
+  return aString.replaceAll(",", ";")
 }
 
 export default replaceTrailingCommas

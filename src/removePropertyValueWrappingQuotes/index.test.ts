@@ -14,7 +14,7 @@ const aString = `styled('div')({
 
 describe("removePropertyValueWrappingQuotes", () => {
   it("Removes correctly", () => {
-    expect(removePropertyValueWrappingQuotes(aString)).toEqual(`styled(div)({
+    expect(removePropertyValueWrappingQuotes(aString)).toEqual(`styled('div')({
   display: grid,
   gridTemplateRows: 65px 22px auto,
   rowGap: 10px,

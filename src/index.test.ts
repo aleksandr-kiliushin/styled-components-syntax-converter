@@ -6,6 +6,6 @@ describe("Styled components syntax converts correctly", () => {
   test.each<{ input: string; output: string; testCaseNumber: number }>([
     { input: input1, output: output1, testCaseNumber: 1 },
   ])("Test case #$testCaseNumber converts correctly.", ({ input, output }) => {
-    expect(convertSyntax({ aString: input })).toEqual(output)
+    expect(convertSyntax(input)).toEqual(output)
   })
 })

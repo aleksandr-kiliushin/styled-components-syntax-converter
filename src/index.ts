@@ -5,7 +5,7 @@ import replacePropertyNames from "./replacePropertyNames"
 import replaceStylesheetWrappingBrackets from "./replaceStylesheetWrappingBrackets"
 import replaceTrailingCommas from "./replaceTrailingCommas"
 
-const convertSyntax = ({ aString }: { aString: string }): string => {
+const convertSyntax = (aString: string): string => {
   return R.pipe(
     replacePropertyNames,
     replaceTrailingCommas,

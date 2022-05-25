@@ -1,5 +1,7 @@
+import replaceTrailingCommas from "./replaceTrailingCommas"
+
 const convertSyntax = ({ aString }: { aString: string }): string => {
-  return aString
+  return replaceTrailingCommas({ aString })
 }
 
 export default convertSyntax

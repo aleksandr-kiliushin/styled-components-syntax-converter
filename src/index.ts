@@ -1,7 +1,5 @@
-const getX = (): string => {
-  return "Xxx"
+const convertSyntax = ({ aString }: { aString: string }): string => {
+  return aString
 }
 
-console.log(getX())
-
-export default getX
+export default convertSyntax

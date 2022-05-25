@@ -14,7 +14,7 @@ const aString = `styled('div')({
 
 describe("replaceTrailingCommas", () => {
   it("Replaces correctly", () => {
-    expect(replaceTrailingCommas({ aString })).toEqual(`styled('div')({
+    expect(replaceTrailingCommas(aString)).toEqual(`styled('div')({
   display: 'grid',
   grid-template-rows: '65px 22px auto',
   row-gap: '10px',

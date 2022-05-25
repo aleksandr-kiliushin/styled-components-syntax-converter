@@ -1,4 +1,4 @@
-const replacePropertyNames = ({ aString }: { aString: string }): string => {
+const replacePropertyNames = (aString: string): string => {
   return aString
     .replace("backgroundColor", "background-color")
     .replace("borderRadius", "border-radius")

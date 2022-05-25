@@ -1,8 +1,10 @@
+import R from "ramda"
+
 import replacePropertyNames from "./replacePropertyNames"
 import replaceTrailingCommas from "./replaceTrailingCommas"
 
 const convertSyntax = ({ aString }: { aString: string }): string => {
-  return replacePropertyNames({ aString: replaceTrailingCommas({ aString }) })
+  return R.pipe(replacePropertyNames, replaceTrailingCommas)(aString)
 }
 
 export default convertSyntax

@@ -1,4 +1,4 @@
-const replaceTrailingCommas = ({ aString }: { aString: string }): string => {
+const replaceTrailingCommas = (aString: string): string => {
   return aString.replaceAll(",", ";")
 }
 

@@ -7,7 +7,7 @@ const aString = `styled('div')({
 
 describe("replaceTrailingCommas", () => {
   it("Replaces correctly", () => {
-    expect(replaceTrailingCommas({ aString })).toEqual(`styled('div')({
+    expect(replaceTrailingCommas(aString)).toEqual(`styled('div')({
   display: 'grid';
   rowGap: '10px';
 })`)

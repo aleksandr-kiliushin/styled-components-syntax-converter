@@ -16,4 +16,4 @@ const convertSyntax = (aString: string): string => {
 
 export default convertSyntax
 
-// `styled` call: styled\((?<quote>['"]?)\w+\k<quote>(?:, \{ shouldForwardProp: isPropValid \})?\)
+// /(?<=const \w+ = styled)\((?<quote>['"]?)\w+\k<quote>(?:, \{ shouldForwardProp: isPropValid \})?\)(:?.+?)(:?}\)\)\n|}\)\n\)\n|,\n}\)\n)/gs
